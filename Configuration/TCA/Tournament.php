@@ -96,8 +96,11 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'label' => 'LLL:EXT:danceclub/Resources/Private/Language/locallang_db.xml:tx_danceclub_domain_model_tournament.date',
 			'config' => array(
 				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim,required'
+				'size' => 8,
+				'max' => 20,
+				'eval' => 'date,required',
+				'checkbox' => 1,
+				'default' => date()
 			),
 		),
 		'organizer' => array(
@@ -133,7 +136,9 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('Standard', 0),
+					array('Latein', 1),
+					array('Kombiniert', 2),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -146,7 +151,11 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('D', 0),
+					array('C', 1),
+					array('B', 2),
+					array('A', 3),
+					array('S', 4)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -159,7 +168,17 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('KI I', 0),
+					array('KI II', 1),
+					array('JUN I', 2),
+					array('JUN II', 3),
+					array('JUG', 4),
+					array('HGR', 5),
+					array('HGR II', 6),
+					array('SEN I', 7),
+					array('SEN II', 8),
+					array('SEN III', 9),
+					array('SEN IV', 10)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -184,7 +203,13 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('eingetragen', 0),
+					array('gemeldet', 1),
+					array('abgemeldet', 2),
+					array('ausgefallen', 3),
+					array('getanzt', 4),
+					array('abgemeldet wegen Aufstieg', 5),
+					array('getanzt - aber nicht anzeigen', 6),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -215,7 +240,8 @@ $TCA['tx_danceclub_domain_model_tournament'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('1', 1),
+					array('2', 2),
 				),
 				'size' => 1,
 				'maxitems' => 1,

@@ -54,7 +54,7 @@ CREATE TABLE tx_danceclub_domain_model_couple (
 	age_standard int(11) DEFAULT '0' NOT NULL,
 	couple_description text NOT NULL,
 	couple_start int(11) DEFAULT '0' NOT NULL,
-	couple_end varchar(255) DEFAULT '' NOT NULL,
+	couple_end int(11) DEFAULT '0' NOT NULL,
 	m_dancer int(11) unsigned DEFAULT '0' NOT NULL,
 	f_dancer int(11) unsigned DEFAULT '0' NOT NULL,
 
@@ -92,7 +92,7 @@ CREATE TABLE tx_danceclub_domain_model_tournament (
 	pid int(11) DEFAULT '0' NOT NULL,
 	
 	
-	date varchar(255) DEFAULT '' NOT NULL,
+	date int(11) DEFAULT '0' NOT NULL,
 	organizer varchar(255) DEFAULT '' NOT NULL,
 	city varchar(255) DEFAULT '' NOT NULL,
 	number varchar(255) DEFAULT '' NOT NULL,

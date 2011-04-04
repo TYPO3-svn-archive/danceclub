@@ -115,7 +115,8 @@ $TCA['tx_danceclub_domain_model_dancer'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('female', 0),
+					array('male', 0),
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -127,11 +128,11 @@ $TCA['tx_danceclub_domain_model_dancer'] = array(
 			'label' => 'LLL:EXT:danceclub/Resources/Private/Language/locallang_db.xml:tx_danceclub_domain_model_dancer.birthday',
 			'config' => array(
 				'type' => 'input',
-				'size' => 12,
+				'size' => 8,
 				'max' => 20,
-				'eval' => 'datetime,required',
+				'eval' => 'date,required',
 				'checkbox' => 1,
-				'default' => time()
+				'default' => date()
 			),
 		),
 		'couple' => array(

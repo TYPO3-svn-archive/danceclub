@@ -97,7 +97,12 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('-', 0),
+					array('D', 1),
+					array('C', 2),
+					array('B', 3),
+					array('A', 4),
+					array('S', 5)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -110,7 +115,15 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('-', 0),
+					array('KI I', 1),
+					array('KI II', 2),
+					array('JUN I', 3),
+					array('JUN II', 4),
+					array('JUG', 5),
+					array('HGR', 6),
+					array('HGR II', 7),
+					array('SEN Latein', 8)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -123,7 +136,12 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('-', 0),
+					array('D', 1),
+					array('C', 2),
+					array('B', 3),
+					array('A', 4),
+					array('S', 5)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -136,7 +154,18 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'config' => array(
 				'type' => 'select',
 				'items' => array(
-					array('-- Label --', 0),
+					array('-', 0),
+					array('KI I', 1),
+					array('KI II', 2),
+					array('JUN I', 3),
+					array('JUN II', 4),
+					array('JUG', 5),
+					array('HGR', 6),
+					array('HGR II', 7),
+					array('SEN I', 8),
+					array('SEN II', 9),
+					array('SEN III', 10),
+					array('SEN IV', 11)
 				),
 				'size' => 1,
 				'maxitems' => 1,
@@ -158,11 +187,11 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'label' => 'LLL:EXT:danceclub/Resources/Private/Language/locallang_db.xml:tx_danceclub_domain_model_couple.couple_start',
 			'config' => array(
 				'type' => 'input',
-				'size' => 12,
+				'size' => 8,
 				'max' => 20,
-				'eval' => 'datetime',
+				'eval' => 'date',
 				'checkbox' => 1,
-				'default' => time()
+				'default' => date()
 			),
 		),
 		'couple_end' => array(
@@ -170,8 +199,11 @@ $TCA['tx_danceclub_domain_model_couple'] = array(
 			'label' => 'LLL:EXT:danceclub/Resources/Private/Language/locallang_db.xml:tx_danceclub_domain_model_couple.couple_end',
 			'config' => array(
 				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim'
+				'size' => 8,
+				'max' => 20,
+				'eval' => 'date',
+				'checkbox' => 1,
+				'default' => date()
 			),
 		),
 		'm_dancer' => array(
