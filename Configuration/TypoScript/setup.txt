@@ -1,0 +1,30 @@
+plugin.tx_danceclub {
+	view {
+		templateRootPath = {$plugin.tx_danceclub.view.templateRootPath}
+		partialRootPath = {$plugin.tx_danceclub.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_danceclub.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_danceclub.persistence.storagePid}
+	}
+}
+
+plugin.tx_danceclub._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-danceclub-pi1 table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-danceclub-pi1 table th {
+		font-weight:bold;
+	}
+
+	.tx-danceclub-pi1 table td {
+		vertical-align:top;
+	}
+)

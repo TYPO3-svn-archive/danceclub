@@ -1,0 +1,34 @@
+<table class="tx-danceclub-pi1" >
+	<tr>
+		<td>
+			<f:translate key="tx_danceclub_domain_model_dancer.firstname" />
+		</td>
+		<td>
+			{dancer.firstname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_danceclub_domain_model_dancer.lastname" />
+		</td>
+		<td>
+			{dancer.lastname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_danceclub_domain_model_dancer.gender" />
+		</td>
+		<td>
+			{dancer.gender}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_danceclub_domain_model_dancer.birthday" />
+		</td>
+		<td>
+			{dancer.birthday -> f:format.date()}
+		</td>
+	</tr>
+</table>

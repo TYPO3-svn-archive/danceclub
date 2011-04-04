@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Context Sensitive Help (CSH) for table tx_danceclub_domain_model_tournament</description>
+        <type>CSH</type>
+        <csh_table>tx_danceclub_domain_model_tournament</csh_table>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+			<label index="date.description">Date of the tournament</label>
+			<label index="organizer.description">Organizer of the tournament</label>
+			<label index="city.description">City of the tournament</label>
+			<label index="number.description">Number of the tournament</label>
+			<label index="type.description">Type of tournament</label>
+			<label index="class.description">Class of the tournament</label>
+			<label index="age.description">Age Class of the tournament</label>
+			<label index="announce_date.description">announce Date</label>
+			<label index="status.description">Status of the announcement</label>
+			<label index="result.description">reached result</label>
+			<label index="participants.description">Amount of participant</label>
+			<label index="rank.description">rank</label>
+			<label index="description.description">description</label>
+			<label index="dance_couple.description">danceCouple</label>
+		</languageKey>
+    </data>
+</T3locallang>

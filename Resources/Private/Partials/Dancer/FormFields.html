@@ -1,0 +1,16 @@
+<label for="firstname">
+	<f:translate key="tx_danceclub_domain_model_dancer.firstname" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textbox property="firstname" /><br />
+<label for="lastname">
+	<f:translate key="tx_danceclub_domain_model_dancer.lastname" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textbox property="lastname" /><br />
+<label for="gender">
+	<f:translate key="tx_danceclub_domain_model_dancer.gender" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textbox property="gender" /><br />
+<label for="birthday">
+	<f:translate key="tx_danceclub_domain_model_dancer.birthday" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textbox property="birthday"  value="{dancer.birthday->f:format.date()}"  /><br />

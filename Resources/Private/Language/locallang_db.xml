@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'danceclub'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_danceclub_domain_model_dancer">Dancer</label>
+			<label index="tx_danceclub_domain_model_dancer.firstname">Firstname</label>
+			<label index="tx_danceclub_domain_model_dancer.lastname">Lastname</label>
+			<label index="tx_danceclub_domain_model_dancer.gender">Gender</label>
+			<label index="tx_danceclub_domain_model_dancer.birthday">Birthday</label>
+			<label index="tx_danceclub_domain_model_couple">Couple</label>
+			<label index="tx_danceclub_domain_model_couple.class_latin">Class Latin</label>
+			<label index="tx_danceclub_domain_model_couple.age_latin">Age Latin</label>
+			<label index="tx_danceclub_domain_model_couple.class_standard">Class Standard</label>
+			<label index="tx_danceclub_domain_model_couple.age_standard">Age Standard</label>
+			<label index="tx_danceclub_domain_model_couple.couple_description">Couple Description</label>
+			<label index="tx_danceclub_domain_model_couple.couple_start">Couple Start</label>
+			<label index="tx_danceclub_domain_model_couple.couple_end">Couple End</label>
+			<label index="tx_danceclub_domain_model_couple.m_dancer">M Dancer</label>
+			<label index="tx_danceclub_domain_model_couple.f_dancer">F Dancer</label>
+			<label index="tx_danceclub_domain_model_tournament">Tournament</label>
+			<label index="tx_danceclub_domain_model_tournament.date">Date</label>
+			<label index="tx_danceclub_domain_model_tournament.organizer">Organizer</label>
+			<label index="tx_danceclub_domain_model_tournament.city">City</label>
+			<label index="tx_danceclub_domain_model_tournament.number">Number</label>
+			<label index="tx_danceclub_domain_model_tournament.type">Type</label>
+			<label index="tx_danceclub_domain_model_tournament.class">Class</label>
+			<label index="tx_danceclub_domain_model_tournament.age">Age</label>
+			<label index="tx_danceclub_domain_model_tournament.announce_date">Announce Date</label>
+			<label index="tx_danceclub_domain_model_tournament.status">Status</label>
+			<label index="tx_danceclub_domain_model_tournament.result">Result</label>
+			<label index="tx_danceclub_domain_model_tournament.participants">Participants</label>
+			<label index="tx_danceclub_domain_model_tournament.rank">Rank</label>
+			<label index="tx_danceclub_domain_model_tournament.description">Description</label>
+			<label index="tx_danceclub_domain_model_tournament.dance_couple">Dance Couple</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,61 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+
+If you modify this template, do not forget to change the overwrite settings 
+in /Configuration/Kickstarter/settings.yaml:
+  Resources:
+    Private: 
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the kickstarter
+
+<f:section name="main">
+<h1>Listing for Tournament</h1>
+
+<f:flashMessages />
+
+<table  class="tx_danceclub" >
+	<tr>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.date" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.organizer" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.city" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.number" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.type" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.class" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.age" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.announce_date" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.status" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.result" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.participants" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.rank" /></th>
+		<th><f:translate key="tx_danceclub_domain_model_tournament.description" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{tournaments}" as="tournament">
+		<tr>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.date}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.organizer}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.city}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.number}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.type}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.class}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.age}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.announceDate -> f:format.date()}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.status}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.result}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.participants}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.rank}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{tournament : tournament}"> {tournament.description}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{tournament : tournament}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{tournament : tournament}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Tournament</f:link.action>
+</f:section>
